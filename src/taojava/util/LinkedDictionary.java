@@ -166,6 +166,7 @@ public class LinkedDictionary<K,V> implements Dictionary<K,V> {
                 this.cached = prev;
                 return prev;
             } // if
+            prev = prev.next;   // Thanks EW, who doesn't care
         } // if
 
         // If we've gotten through the while loop, no elements
