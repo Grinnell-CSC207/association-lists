@@ -68,6 +68,6 @@ public class LinkedDictionaryTest
     assertEquals(dict.remove("b"), "beta");
     assertEquals(dict.get("a"), "alpha");
     assertEquals(dict.get("c"), "clean");
-    assertEquals(dict.containsKey("b"), true);
+    assertEquals(dict.containsKey("b"), false);
   } // testRemove
 } // LinkedDictionaryTest
